@@ -153,19 +153,12 @@ def imprimirInformacoes(codigoFinal, texto, textoDecodificado):
 
 root = Tk()
 root.title('Projeto Greedy')
-
-
 canvas = Canvas(width=1000, height=800, bg='white')
 canvas.focus_set()
-
 canvas.pack(expand=YES, fill=BOTH)
-
 Label(root, text='Entre sua string a ser compactada:').place(x=400, y=50)
 entrada = Entry(root)
 entrada.place(x=400, y=80)
-
 Button(root, text="COMPACTAR", command=compactar,
        height=1, width=13).place(x=400, y=120)
-
-
 root.mainloop()
