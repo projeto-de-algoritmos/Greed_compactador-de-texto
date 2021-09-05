@@ -14,13 +14,13 @@ Temas:
 
 # NomedoProjeto
 
-**Número da Lista**: X<br>
+**Número da Lista**: 27<br>
 **Conteúdo da Disciplina**: XXXXXXXXXX<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 19/0011602  |  Christian Fleury Alencar Siqueira |
 | xx/xxxxxx  |  xxxx xxxx xxxxx |
 
 ## Sobre 
