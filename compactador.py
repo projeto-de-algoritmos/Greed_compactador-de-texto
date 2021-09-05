@@ -152,7 +152,7 @@ def imprimirInformacoes(codigoFinal, texto, textoDecodificado):
 
 
 root = Tk()
-root.title('Projeto Greedy')
+root.title('Projeto Greed')
 canvas = Canvas(width=1000, height=800, bg='white')
 canvas.focus_set()
 canvas.pack(expand=YES, fill=BOTH)
