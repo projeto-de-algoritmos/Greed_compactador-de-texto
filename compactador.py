@@ -18,11 +18,10 @@ def compactar():
     canvas.delete("all")
 
     texto = entrada.get()
-
     probabilidades = {}
     acesso = {}
     tabelaDeCodigos = {}
-    q = []
+    pilha = []
     codigoFinal = []
 
     for i in texto:
@@ -45,11 +44,11 @@ def compactar():
 
         no.esquerda = noEsquerda
         no.direita = -1
-        q.append(no)
+        pilha.append(no)
 
-    while len(q) > 1:
-        x = q.pop(0)
-        y = q.pop(0)
+    while len(pilha) > 1:
+        x = pilha.pop(0)
+        y = pilha.pop(0)
 
         arvore = Node()
         arvore.peso = x.peso+y.peso
@@ -83,17 +82,17 @@ def compactar():
 
         j = 0
         s = 0
-        for i in q:
+        for i in pilha:
             if i.peso <= arvore.peso:
                 j += 1
             else:
-                q.insert(j, arvore)
+                pilha.insert(j, arvore)
                 s = 1
                 break
-        if j == len(q):
-            q.append(arvore)
+        if j == len(pilha):
+            pilha.append(arvore)
 
-    q[0].raiz = True
+    pilha[0].raiz = True
 
     for i in acesso.items():
         codigo = []
