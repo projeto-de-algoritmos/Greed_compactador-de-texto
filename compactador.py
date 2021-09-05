@@ -105,7 +105,8 @@ def compactar():
             no = no.pai
         codigo.reverse()
 
-        tabelaDeCodigos[letra] = ''.join(str(x) for x in codigo)
+        if letra not in tabelaDeCodigos:
+            tabelaDeCodigos[letra] = ''.join(str(x) for x in codigo)
 
     for i in texto:
         codigoFinal.append(tabelaDeCodigos[i])
