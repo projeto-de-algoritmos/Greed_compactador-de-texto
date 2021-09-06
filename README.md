@@ -10,21 +10,28 @@
 | 19/0055294  |  Thiago Siqueira Gomes |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Um compactador de textos utilizando o código de Huffman.
+Entre um texto para codifica-lo e decodifica-lo, e comparar quantos bits o seu texto ira custar, em comparação com ele na tabela ASCII
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+## Instalação
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+**Linguagem**: Python3<br>
+**Framework**: Tkinter<br>
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Primeiramente instale o Python3 no seu computador
+
+Depois instale a bibliotéca Tkinter com o seguinte comando: <br>
+``` sudo apt install python3-tk ```
+OBS: no windows o tkinter vem instalado por padrão <br>
+## Uso
+
+Rode dentro da pasta do projeto o seguinte comando: <br>
+``` python3 compactador.py ``` 
+
+Preencha o campo de texto e clique no botão para compactar!
 
 
 
