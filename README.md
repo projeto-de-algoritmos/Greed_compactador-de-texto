@@ -1,7 +1,7 @@
 # Compactador-de-texto
 
 **Número da Lista**: 27<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Conteúdo da Disciplina**: Greed<br>
 
 ## Alunos
 |Matrícula | Aluno |
