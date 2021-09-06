@@ -13,7 +13,7 @@ class Node(object):
         self.direita = None
 
 
-def compactar():
+def huffman():
     global canvas
     canvas.delete("all")
 
@@ -21,7 +21,7 @@ def compactar():
     probabilidades = {}
     acesso = {}
     tabelaDeCodigos = {}
-    pilha = []
+    fila = []
     codigoFinal = []
 
     for i in texto:
@@ -44,11 +44,11 @@ def compactar():
 
         no.esquerda = noEsquerda
         no.direita = -1
-        pilha.append(no)
+        fila.append(no)
 
-    while len(pilha) > 1:
-        x = pilha.pop(0)
-        y = pilha.pop(0)
+    while len(fila) > 1:
+        x = fila.pop(0)
+        y = fila.pop(0)
 
         arvore = Node()
         arvore.peso = x.peso+y.peso
@@ -81,17 +81,17 @@ def compactar():
             arvore.direita = y
 
         j = 0
-        for i in pilha:
+        for i in fila:
             if i.peso <= arvore.peso:
                 j += 1
             else:
-                pilha.insert(j, arvore)
+                fila.insert(j, arvore)
                 s = 1
                 break
-        if j == len(pilha):
-            pilha.append(arvore)
+        if j == len(fila):
+            fila.append(arvore)
 
-    pilha[0].raiz = True
+    fila[0].raiz = True
 
     for i in acesso.items():
         codigo = []
@@ -162,6 +162,6 @@ canvas.pack(expand=YES, fill=BOTH)
 Label(root, text='Entre sua string a ser compactada:').place(x=400, y=50)
 entrada = Entry(root)
 entrada.place(x=400, y=80)
-Button(root, text="COMPACTAR", command=compactar,
+Button(root, text="COMPACTAR", command=huffman,
        height=1, width=13).place(x=400, y=120)
 root.mainloop()
