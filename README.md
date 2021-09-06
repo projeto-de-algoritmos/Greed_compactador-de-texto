@@ -15,7 +15,9 @@ Entre um texto para codifica-lo e decodifica-lo, e comparar quantos bits o seu t
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
-
+<img width="30%" src="https://i.imgur.com/3QEmqIe.png" alt="Image1"/>
+<img width="30%" src="https://i.imgur.com/oIYMi6Y.png" alt="Image1"/>
+<img width="30%" src="https://i.imgur.com/7S7FHSc.png" alt="Image1"/>
 ## Instalação
 
 **Linguagem**: Python3<br>
