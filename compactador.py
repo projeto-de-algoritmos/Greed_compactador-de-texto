@@ -3,7 +3,7 @@ import ctypes
 
 
 class Node(object):
-    def __init__(self):
+    def _init_(self):
         self.raiz = False
         self.pai = None
         self.letra = None
@@ -103,6 +103,7 @@ def compactar():
         while no.raiz == False:
             codigo.append(no.bit)
             no = no.pai
+
         codigo.reverse()
 
         if letra not in tabelaDeCodigos:
@@ -112,10 +113,12 @@ def compactar():
         codigoFinal.append(tabelaDeCodigos[i])
 
     textoDecodificado = []
+
     print(''.join(codigoFinal))
+
+    # Decodificando
     temp = arvore
     for i in ''.join(codigoFinal):
-
         if i == '0':
             temp = temp.esquerda
         elif i == '1':
