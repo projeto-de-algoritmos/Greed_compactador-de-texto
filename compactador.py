@@ -3,7 +3,7 @@ import ctypes
 
 
 class Node(object):
-    def _init_(self):
+    def __init__(self):
         self.raiz = False
         self.pai = None
         self.letra = None
@@ -81,7 +81,6 @@ def compactar():
             arvore.direita = y
 
         j = 0
-        s = 0
         for i in pilha:
             if i.peso <= arvore.peso:
                 j += 1
@@ -103,7 +102,6 @@ def compactar():
         while no.raiz == False:
             codigo.append(no.bit)
             no = no.pai
-
         codigo.reverse()
 
         if letra not in tabelaDeCodigos:
@@ -113,12 +111,10 @@ def compactar():
         codigoFinal.append(tabelaDeCodigos[i])
 
     textoDecodificado = []
-
     print(''.join(codigoFinal))
-
-    # Decodificando
     temp = arvore
     for i in ''.join(codigoFinal):
+
         if i == '0':
             temp = temp.esquerda
         elif i == '1':
@@ -155,10 +151,14 @@ def imprimirInformacoes(codigoFinal, texto, textoDecodificado):
 
 
 root = Tk()
-root.title('Projeto Greed')
+root.title('Projeto Greedy')
+
+
 canvas = Canvas(width=1000, height=800, bg='white')
 canvas.focus_set()
+
 canvas.pack(expand=YES, fill=BOTH)
+
 Label(root, text='Entre sua string a ser compactada:').place(x=400, y=50)
 entrada = Entry(root)
 entrada.place(x=400, y=80)
