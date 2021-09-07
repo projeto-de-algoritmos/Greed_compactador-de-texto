@@ -124,6 +124,8 @@ def huffman():
             textoDecodificado.append(temp.letra)
             temp = arvore
 
+    print(''.join(textoDecodificado))        
+            
     imprimirInformacoes('   '.join(codigoFinal), texto,
                         ''.join(textoDecodificado))
 
