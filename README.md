@@ -19,6 +19,7 @@ Entre um texto para codifica-lo e decodifica-lo, e comparar quantos bits o seu t
 <img width="30%" src="https://i.imgur.com/3QEmqIe.png" alt="Image1"/>
 <img width="30%" src="https://i.imgur.com/oIYMi6Y.png" alt="Image1"/>
 <img width="30%" src="https://i.imgur.com/7S7FHSc.png" alt="Image1"/>
+<img width="30%" src="https://i.imgur.com/1wRk8QR.jpeg" alt="Image1"/>
 
 ## Instalação
 
